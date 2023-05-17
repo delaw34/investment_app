@@ -14,8 +14,9 @@ def investment_timer():
    interest_calc = wallet * Profit_percentage / 100
    wallet_balance = wallet + interest_calc    
    print(name_of_investor,'Your wallet has been credited with the sum of:','N', wallet_balance,"with a 10% interest on your capital")
+    #add interest every 24hrs
 while True:
    investment_timer()
-   time.sleep(10)
+   time.sleep(24 * 60 * 60)  # 24 hours = 24 * 60 minutes * 60 seconds
      
 
